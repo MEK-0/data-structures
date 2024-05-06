@@ -17,7 +17,7 @@ void add(node*r,int x){  // bir yapı olmak zorunda
     }
     r->next=(node*)malloc(sizeof(node));
     r->next->x=x;
-    r->back=r;
+    r->next->back=r;
 }
 
 void read(node*r){
